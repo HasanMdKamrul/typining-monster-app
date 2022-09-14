@@ -199,9 +199,15 @@ button {
 }
 
 @media only screen and (max-width: 576px) {
+  .box-container {
+    padding: 0 20px;
+    width: 100%;
+  }
   #histories {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+ 
   }
 }
