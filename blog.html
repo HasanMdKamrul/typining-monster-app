@@ -42,7 +42,24 @@
                   </svg>
                   Difference between localStorage and sessionStorage?
                 </h3>
-                <p class="text-gray-500 dark:text-gray-400"></p>
+                <p class="text-gray-500 dark:text-gray-400">
+                  First of all, the differences are pretty straight forword as
+                  the name suggested, the localStorage is something in local and
+                  the session expires when the session ends. Let's have a deeper
+                  dive,The most significant difference between sessionStorage
+                  and localStorage is that localStorage data does not expire,
+                  whereas sessionStorage data is cleared when the page session
+                  ends.A unique page session gets created once a document is
+                  loaded in a browser tab. Page sessions are valid for only one
+                  tab at a time. On the contrary, in localStorage you browse
+                  through different window the localStorage remains same and
+                  dosen't disapear like the sessionStorage until you clear it.
+                  Lastly, the both have similar operations like
+                  getItem(),setItem(),removeItem(),clear() these but again
+                  localStorage has few more rooms than the session storage where
+                  localStorage can store up to 10mb meanwhile session storage
+                  stores only half of the local storage.
+                </p>
               </div>
               <div class="mb-10">
                 <h3
