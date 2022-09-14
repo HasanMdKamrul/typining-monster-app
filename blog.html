@@ -118,8 +118,29 @@
                   </svg>
                   How javaScript event loop works?
                 </h3>
-                <p class="text-gray-500 dark:text-gray-400"></p>
-                <p class="text-gray-500 dark:text-gray-400"></p>
+                <p class="text-gray-500 dark:text-gray-400">
+                  We all know js is a single threaded high level programming
+                  language.Sometimes it needs to do some work in parallel such
+                  as data fetching from the api or any function that needs time
+                  to execute,otherwise the user experice will be horrified
+                  because users need to wait a longer period as well as some
+                  portion of the website will be broken as well. But how js
+                  acheive this phenomenol achievement where it can work
+                  simultenously? The simple answer to this question is event
+                  loop.
+                </p>
+                <p class="text-gray-500 dark:text-gray-400">
+                  Let's break it down, when a scripts runs on chrome for an
+                  instance, it goes to the v8 engine first,when the v8 engine or
+                  the call stack inside it see's the fetch method for an
+                  instance it recognise its not included in his code, so
+                  immidietly it goes to the browser api, from there it goes to
+                  callback queue. Now event loop see if in the call stack no
+                  synchronous code to execute it sends the asynchronous
+                  functions to the call stack for the final execution.This is
+                  the event loops work if nothing on call stach it sends the
+                  async code to execute.
+                </p>
               </div>
               <div class="mb-10">
                 <h3
