@@ -40,3 +40,11 @@ function displayHistory() {
     histories.appendChild(newRow);
   });
 }
+
+
+// ** local storage reset functionality
+
+document.getElementById('reset').addEventListener('click',()=>{
+  localStorage.clear();
+  displayHistory();
+})
