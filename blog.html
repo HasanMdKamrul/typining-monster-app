@@ -132,14 +132,14 @@
                 <p class="text-gray-500 dark:text-gray-400">
                   Let's break it down, when a scripts runs on chrome for an
                   instance, it goes to the v8 engine first,when the v8 engine or
-                  the call stack inside it see's the fetch method for an
-                  instance it recognise its not included in his code, so
-                  immidietly it goes to the browser api, from there it goes to
-                  callback queue. Now event loop see if in the call stack no
-                  synchronous code to execute it sends the asynchronous
-                  functions to the call stack for the final execution.This is
-                  the event loops work if nothing on call stach it sends the
-                  async code to execute.
+                  the call stack get the fetch method for an instance it
+                  recognise it's not included in his code, so immidietly it goes
+                  to the browser api, from there it goes to callback queue. Now
+                  event loop see if in the call stack no synchronous code to
+                  execute, only then it sends the asynchronous functions to the
+                  call stack for the final execution.This is the event loops
+                  work if nothing on call stack it sends the async code to
+                  execute.
                 </p>
               </div>
               <div class="mb-10">
@@ -169,14 +169,14 @@
                   to return then upon execution it will give us undefined. 4.In
                   a function you use a number of paremeters but when you invoke
                   that function you only send a few parameters on none. so the
-                  parameters inside that function will not get therir desire
+                  parameters inside that function will not get their desire
                   values and will return an undefined. 5. If a non-existing
                   object property tried to be accessed it will give an
                   undefined. 6.If a non-existing array element tried to be
                   accessed it will give an undefined. 7. It you delete an array
                   elemnt using delete keyword than later try to access it it
                   will through an undefined. 8. If you directly assign a
-                  variable undefined.
+                  variable as undefined.
                 </p>
               </div>
             </div>
