@@ -107,7 +107,11 @@ const start = () => {
   let count = 3;
   countdownOverlay.style.display = "flex";
 
+  countdownOverlay.textContent = ``;
+
+
   const startCountdown = setInterval(() => {
+    
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
     // countdownOverlay.style.display = "block";
     // finished timer
@@ -139,4 +143,3 @@ setInterval(() => {
 
   document.getElementById("show-time").innerHTML = `${startTime ? parseInt(timeSpent) : 0} seconds`;
 }, 1000);
-
